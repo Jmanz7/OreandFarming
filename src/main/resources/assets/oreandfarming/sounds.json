@@ -1,0 +1,18 @@
+{
+	"item.music_disc_pigstep":
+	{
+		"category":"item:,
+		"subtitle":music_disc_pigstep.sub,
+		"sounds":[
+		   {
+				"name": "oreandfarming:item/music_disc_pigstep",
+				"stream": true
+		   }
+		]  
+	}
+	
+
+
+
+
+}
