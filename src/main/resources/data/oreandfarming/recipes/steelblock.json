@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"SSS",
+		"SSS",
+		"SSS"
+	],
+	"key": {
+		"S": {
+			"tag": "forge:ingots/steel"
+		}
+	},
+	"result": {
+		"item": "oreandfarming:steel_block"
+
+	}
+}
