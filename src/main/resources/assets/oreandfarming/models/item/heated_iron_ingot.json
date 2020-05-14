@@ -1,0 +1,6 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "oreandfarming:items/heated_iron_ingot"
+	}
+}

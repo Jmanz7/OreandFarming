@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern":
+	[
+		"I",
+		"P",
+		"R",
+	],
+	"key":
+	{
+		"I": { "item": "minecraft:iron_ingot" },
+		"P": { "item": "minecraft:diamond_pickaxe" },
+		"R": { "item": "minecraft:redstone" }
+	},
+	"result": { "item": "oreandfarming:iron_drill_head" }
+}

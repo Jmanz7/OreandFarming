@@ -1,7 +1,10 @@
 package io.github.jmanz7.oreandfarming;
 
 
+import io.github.jmanz7.oreandfarming.init.BlockInit;
+import io.github.jmanz7.oreandfarming.init.ItemInit;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -17,36 +20,28 @@ public class OreandFarming
     //private static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID= "oreandfarming";
     public static OreandFarming instance;
-   
+    IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+
     public OreandFarming() 
     {
     	
     	instance = this;
-    	
-    	
-    	//ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, Config.server_config);
-       // ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, Config.client_config);
-        
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
 
-       // Config.loadConfig(Config.client_config, FMLPaths.CONFIGDIR.get().resolve("oreandfarming-client.toml").toString());
-        //Config.loadConfig(Config.server_config, FMLPaths.CONFIGDIR.get().resolve("oreandfarming-server.toml").toString());
+       // FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
+      // FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
+
+        ItemInit.ITEMS.register(modEventBus);
+        BlockInit.BLOCKS.register(modEventBus);
         
         MinecraftForge.EVENT_BUS.register(this);
         
         
     }
 
-    private void setup(final FMLCommonSetupEvent event)
-    {
-    	
-    }
+   // private void setup(final FMLCommonSetupEvent event) { }
 
-    private void doClientStuff(final FMLClientSetupEvent event) 
-    {
-        
-    }
+   // private void doClientStuff(final FMLClientSetupEvent event) { }
     
     @SubscribeEvent
     public void onServerStarting(FMLServerStartingEvent event) 
