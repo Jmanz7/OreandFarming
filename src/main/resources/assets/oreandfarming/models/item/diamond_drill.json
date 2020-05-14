@@ -1,6 +1,6 @@
 {
 	"parent": "item/handheld",
 	"textures": {
-		"layer0": "oreandfarming:items/diamond_drill"
+		"layer0": "oreandfarming:item/diamond_drill"
 	}
 }

@@ -1,6 +1,6 @@
 {
 	"parent": "item/handheld",
 	"textures": {
-		"layer0": "oreandfarming:items/iron_drill"
+		"layer0": "oreandfarming:item/iron_drill"
 	}
 }
