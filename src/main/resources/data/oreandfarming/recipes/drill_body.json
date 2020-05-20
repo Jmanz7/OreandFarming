@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern":
+	[
+		"QRQ",
+		"SSS",
+		" B "
+	],
+	"key":
+	{
+		"Q": { "item": "minecraft:quartz" },
+		"R": { "item": "minecraft:redstone" },
+		"S": { "tag": "forge:ingots/steel" },
+		"B": { "item": "minecraft:iron_bars" }
+	},
+	"result": { "item": "oreandfarming:drill_body" }
+}

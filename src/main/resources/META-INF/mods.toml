@@ -1,0 +1,25 @@
+modLoader="javafml" 
+loaderVersion="[31,)" 
+issueTrackerURL="https://github.com/ThermalWolf/OreandFarming/issues"
+[[mods]]
+modId="oreandfarming" 
+version="0.1.3.0"
+displayName="OreandFarming"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/oreandfarming"
+logoFile="oreandfarming.png" 
+authors="Jmanz7" 
+description="This mod adds several features that enhance Vanilla Minecraft."
+
+[[dependencies.oreandfarming]]
+    modId="forge"
+    mandatory=true
+    versionRange="[31,)"
+    ordering="NONE"
+    side="BOTH"
+    
+[[dependencies.oreandfarming]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.15.2]"
+    ordering="NONE"
+    side="BOTH"

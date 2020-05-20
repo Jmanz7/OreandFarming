@@ -1,0 +1,13 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern":
+	[
+		"SS",
+		"SS"
+	],
+	"key":
+	{
+		"S": { "item": "oreandfarming:heated_iron_ingot" }
+	},
+	"result": { "item": "oreandfarming:steel_ingot" }
+}

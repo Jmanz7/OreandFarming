@@ -1,0 +1,6 @@
+{
+	"parent": "block/cube_all",
+	"textures": {
+		"all": "oreandfarming:block/steel_block"
+	}
+}

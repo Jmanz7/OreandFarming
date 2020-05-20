@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern":
+	[
+		"H",
+		"R",
+		"B"
+	],
+	"key":
+	{
+		"H": { "item": "oreandfarming:golden_drill_head" },
+		"R": { "item": "minecraft:redstone" },
+		"B": { "item": "oreandfarming:drill_body" }
+	},
+	"result": { "item": "oreandfarming:golden_drill" }
+}
