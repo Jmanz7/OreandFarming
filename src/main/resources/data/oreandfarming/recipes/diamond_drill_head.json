@@ -8,9 +8,9 @@
 	],
 	"key":
 	{
-		"I": { "item": "minecraft:diamond" },
+		"I": { "item": "oreandfarming:compressed_diamond" },
 		"P": { "item": "minecraft:diamond_pickaxe" },
-		"R": { "item": "minecraft:redstone" }
+		"R": { "tag": "forge:dusts/redstone" }
 	},
 	"result": { "item": "oreandfarming:diamond_drill_head" }
 }

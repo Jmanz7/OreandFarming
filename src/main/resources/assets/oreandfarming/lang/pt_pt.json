@@ -1,12 +1,16 @@
 {
 	"item.oreandfarming.heated_iron_ingot": "Barra de ferro aquecida",
 	"item.oreandfarming.steel_ingot": "Barra de aço",
-	"item.oreandfarming.steel_block": "Bloco de aço",
+	"item.oreandfarming.compressed_diamond": "Diamante comprimido",
 	"item.oreandfarming.iron_drill": "Broca de ferro",
 	"item.oreandfarming.diamond_drill": "Broca de diamante",
 	"item.oreandfarming.golden_drill": "Broca de ouro",
 	"item.oreandfarming.iron_drill_head": "Cabeça de broca de ferro",
 	"item.oreandfarming.diamond_drill_head": "Cabeça de broca de diamante",
 	"item.oreandfarming.golden_drill_head": "Cabeça de broca de ouro",
-	"item.oreandfarming.drill_body": "Corpo de broca"
+	"item.oreandfarming.drill_body": "Corpo de broca",
+
+	"block.oreandfarming.steel_block": "Bloco de aço",
+
+	"death.attack.heated_iron_ingot": "%1$s queimou as mãos"
 }

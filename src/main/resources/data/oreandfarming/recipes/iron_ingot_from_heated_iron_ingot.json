@@ -1,0 +1,9 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients":
+	[
+		{ "item": "oreandfarming:heated_iron_ingot" },
+		{ "item": "minecraft:water_bucket" }
+	],
+	"result": { "item": "minecraft:iron_ingot" }
+}

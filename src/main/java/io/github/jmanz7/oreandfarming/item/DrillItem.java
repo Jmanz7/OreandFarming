@@ -1,12 +1,11 @@
 package io.github.jmanz7.oreandfarming.item;
 
+import io.github.jmanz7.oreandfarming.util.Helper;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.Direction;
@@ -44,8 +43,7 @@ public class DrillItem extends PickaxeItem
             if (this.getTier() == DrillTier.GOLD) this.mineBlock(worldIn, pos.add(0, -1, 0), stack);
             else
             {
-                Direction.Axis axis = entityLiving.getHorizontalFacing().getAxis();
-                if (entityLiving.rotationPitch < -45 || entityLiving.rotationPitch > 45) axis = Direction.Axis.Y;
+                Direction.Axis axis = Helper.getFacing(entityLiving).getAxis();
 
                 int side = this.getTier().getMiningSize() / 2;
                 for (int x = -side; x <= side; x++)

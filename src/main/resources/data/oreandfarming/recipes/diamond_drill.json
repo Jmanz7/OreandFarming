@@ -9,7 +9,7 @@
 	"key":
 	{
 		"H": { "item": "oreandfarming:diamond_drill_head" },
-		"R": { "item": "minecraft:redstone" },
+		"R": { "tag": "forge:dusts/redstone" },
 		"B": { "item": "oreandfarming:drill_body" }
 	},
 	"result": { "item": "oreandfarming:diamond_drill" }

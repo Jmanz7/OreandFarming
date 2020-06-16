@@ -10,7 +10,7 @@
 	{
 		"I": { "item": "minecraft:gold_ingot" },
 		"P": { "item": "minecraft:golden_pickaxe" },
-		"R": { "item": "minecraft:redstone" }
+		"R": { "tag": "forge:dusts/redstone" }
 	},
 	"result": { "item": "oreandfarming:golden_drill_head" }
 }

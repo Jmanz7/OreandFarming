@@ -8,8 +8,8 @@
 	],
 	"key":
 	{
-		"Q": { "item": "minecraft:quartz" },
-		"R": { "item": "minecraft:redstone" },
+		"Q": { "tag": "forge:gems/quartz" },
+		"R": { "tag": "forge:dusts/redstone" },
 		"S": { "tag": "forge:ingots/steel" },
 		"B": { "item": "minecraft:iron_bars" }
 	},

@@ -3,11 +3,11 @@ loaderVersion="[31,)"
 issueTrackerURL="https://github.com/ThermalWolf/OreandFarming/issues"
 [[mods]]
 modId="oreandfarming" 
-version="0.1.3.0"
+version="0.1.4.1"
 displayName="OreandFarming"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/oreandfarming"
 logoFile="oreandfarming.png" 
-authors="Jmanz7" 
+authors="Jmanz7, MaroonShaded"
 description="This mod adds several features that enhance Vanilla Minecraft."
 
 [[dependencies.oreandfarming]]

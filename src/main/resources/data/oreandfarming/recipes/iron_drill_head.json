@@ -8,9 +8,9 @@
 	],
 	"key":
 	{
-		"I": { "item": "minecraft:iron_ingot" },
+		"I": { "tag": "forge:ingots/iron" },
 		"P": { "item": "minecraft:iron_pickaxe" },
-		"R": { "item": "minecraft:redstone" }
+		"R": { "tag": "forge:dusts/redstone" }
 	},
 	"result": { "item": "oreandfarming:iron_drill_head" }
 }

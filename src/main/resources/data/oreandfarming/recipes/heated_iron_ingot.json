@@ -1,8 +1,6 @@
 {
 	"type": "minecraft:blasting",
-	"ingredient": {
-		"item": "minecraft:iron_ingot"
-	},
+	"ingredient": { "tag": "forge:ingots/iron" },
 	"result": "oreandfarming:heated_iron_ingot",
 	"experience": 0.5,
 	"cookingtime": 600

@@ -1,12 +1,16 @@
 {
 	"item.oreandfarming.heated_iron_ingot": "Heated Iron Ingot",
 	"item.oreandfarming.steel_ingot": "Steel Ingot",
-	"block.oreandfarming.steel_block": "Block of Steel",
+	"item.oreandfarming.compressed_diamond": "Compressed Diamond",
 	"item.oreandfarming.iron_drill": "Iron Drill",
 	"item.oreandfarming.diamond_drill": "Diamond Drill",
 	"item.oreandfarming.golden_drill": "Golden Drill",
 	"item.oreandfarming.iron_drill_head": "Iron Drill Head",
 	"item.oreandfarming.diamond_drill_head": "Diamond Drill Head",
 	"item.oreandfarming.golden_drill_head": "Golden Drill Head",
-	"item.oreandfarming.drill_body": "Drill Body"
+	"item.oreandfarming.drill_body": "Drill Body",
+
+	"block.oreandfarming.steel_block": "Block of Steel",
+
+	"death.attack.heated_iron_ingot": "%1$s held hot iron for too long"
 }

@@ -1,6 +1,5 @@
 package io.github.jmanz7.oreandfarming.event;
 
-import io.github.jmanz7.oreandfarming.item.DrillItem;
 import net.minecraft.block.*;
 import net.minecraft.entity.item.ExperienceOrbEntity;
 import net.minecraft.util.math.BlockPos;
