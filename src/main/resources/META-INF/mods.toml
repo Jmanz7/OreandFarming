@@ -3,7 +3,7 @@ loaderVersion="[31,)"
 issueTrackerURL="https://github.com/ThermalWolf/OreandFarming/issues"
 [[mods]]
 modId="oreandfarming" 
-version="0.1.4.1"
+version="0.1.5.0"
 displayName="OreandFarming"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/oreandfarming"
 logoFile="oreandfarming.png" 

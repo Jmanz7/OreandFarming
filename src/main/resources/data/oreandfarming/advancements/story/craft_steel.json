@@ -1,0 +1,31 @@
+{
+  "parent": "minecraft:story/smelt_iron",
+  "display":
+  {
+    "icon": { "item": "oreandfarming:steel_ingot" },
+    "title": { "translate": "oreandfarming.advancements.story.craft_steel.title" },
+    "description": { "translate": "oreandfarming.advancements.story.craft_steel.description" },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria":
+  {
+    "steel":
+    {
+      "trigger": "minecraft:inventory_changed",
+      "conditions":
+      {
+        "items":
+        [
+          { "tag": "forge:ingots/steel" }
+        ]
+      }
+    }
+  },
+  "requirements":
+  [
+    [ "steel" ]
+  ]
+}

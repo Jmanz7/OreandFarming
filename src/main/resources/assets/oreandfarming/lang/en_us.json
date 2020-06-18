@@ -12,5 +12,10 @@
 
 	"block.oreandfarming.steel_block": "Block of Steel",
 
-	"death.attack.heated_iron_ingot": "%1$s held hot iron for too long"
+	"death.attack.heated_iron_ingot": "%1$s held hot iron for too long",
+
+	"oreandfarming.advancements.story.craft_steel.title": "Acquire Harderware",
+	"oreandfarming.advancements.story.craft_steel.description": "Craft steel ingots from hot iron",
+	"oreandfarming.advancements.story.get_drill.title": "Drill with it",
+	"oreandfarming.advancements.story.get_drill.description": "Make a drill of any material"
 }
