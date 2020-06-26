@@ -12,10 +12,11 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 public class OreandFarming
 {
     public static final String MODID = "oreandfarming";
+    // public static final Logger LOGGER = LogManager.getLogger(MODID);
 
     public static final DamageSource HEATED_IRON_INGOT = new DamageSource("heated_iron_ingot");
 
-    public OreandFarming() 
+    public OreandFarming()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 

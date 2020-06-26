@@ -32,6 +32,6 @@ public class EventHandler
 		BlockState state = world.getBlockState(pos);
 
 		if (!world.isRemote && !event.getPlayer().abilities.isCreativeMode && state.getBlock() instanceof SweetBerryBushBlock && state.get(SweetBerryBushBlock.AGE) == 3)
-			world.addEntity(new ExperienceOrbEntity(world, (double)pos.getX() + 0.5D, (double)pos.getY() + 0.5D, (double)pos.getZ() + 0.5D, 1));
+			world.addEntity(new ExperienceOrbEntity(world, (double)pos.getX() + 0.5D, (double)pos.getY() + 0.5D, (double)pos.getZ() + 0.5D, ExperienceOrbEntity.getXPSplit(1)));
 	}
 }
