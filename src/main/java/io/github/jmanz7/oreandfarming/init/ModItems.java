@@ -26,11 +26,10 @@ public final class ModItems
     public static final RegistryObject<Item> GOLDEN_DRILL_HEAD = ITEMS.register("golden_drill_head", () -> new Item(new Item.Properties().group(ItemGroup.TOOLS)));
     public static final RegistryObject<Item> DRILL_BODY = ITEMS.register("drill_body", () -> new Item(new Item.Properties().group(ItemGroup.TOOLS)));
 
-
     public static final RegistryObject<Item> GREEN_APPLE = ITEMS.register("green_apple", () -> new Item(new Item.Properties().group(ItemGroup.FOOD).food(Foods.APPLE)));
     public static final RegistryObject<Item> POISONOUS_APPLE = ITEMS.register("poisonous_apple", () -> new Item(new Item.Properties().group(ItemGroup.FOOD).food(ModFoods.POISONOUS_APPLE)));
+    public static final RegistryObject<Item> STEEL_APPLE = ITEMS.register("steel_apple", () -> new Item(new Item.Properties().group(ItemGroup.FOOD).rarity(Rarity.RARE).food(ModFoods.STEEL_APPLE)));
     public static final RegistryObject<Item> DIAMOND_APPLE = ITEMS.register("diamond_apple", () -> new Item(new Item.Properties().group(ItemGroup.FOOD).rarity(Rarity.RARE).food(ModFoods.DIAMOND_APPLE)));
     public static final RegistryObject<Item> ENCHANTED_DIAMOND_APPLE = ITEMS.register("enchanted_diamond_apple", () -> new EnchantedGoldenAppleItem(new Item.Properties().group(ItemGroup.FOOD).rarity(Rarity.EPIC).food(ModFoods.ENCHANTED_DIAMOND_APPLE)));
-    public static final RegistryObject<Item> STEEL_APPLE = ITEMS.register("steel_apple", () -> new Item(new Item.Properties().group(ItemGroup.FOOD).rarity(Rarity.RARE).food(ModFoods.STEEL_APPLE)));
     // public static final RegistryObject<Item> COMPRESSOR = ITEMS.register(ModBlocks.COMPRESSOR.getId().getPath(), () -> new BlockItem(ModBlocks.COMPRESSOR.get(), new Item.Properties().group(ItemGroup.DECORATIONS)));
 }
