@@ -1,13 +1,9 @@
 {
-	"type": "minecraft:crafting_shaped",
-	"pattern":
+	"type": "minecraft:crafting_shapeless",
+	"ingredients":
 	[
-		"SS",
-		"SS"
+		{ "item": "oreandfarming:heated_iron_ingot" },
+		{ "item": "oreandfarming:heated_iron_ingot" }
 	],
-	"key":
-	{
-		"S": { "item": "oreandfarming:heated_iron_ingot" }
-	},
 	"result": { "item": "oreandfarming:steel_ingot" }
 }
