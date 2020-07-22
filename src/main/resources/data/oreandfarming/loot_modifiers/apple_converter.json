@@ -1,0 +1,6 @@
+{
+  "conditions": [],
+  "chance": 0.5,
+  "item": "minecraft:apple",
+  "replacement": "oreandfarming:green_apple"
+}

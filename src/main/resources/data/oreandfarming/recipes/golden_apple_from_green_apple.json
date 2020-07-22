@@ -10,5 +10,6 @@
   {
     "#": { "tag": "forge:ingots/gold" },
     "X": { "item": "oreandfarming:green_apple" }
-  }
+  },
+  "result": { "item": "minecraft:golden_apple" }
 }

@@ -2,6 +2,7 @@ package io.github.jmanz7.oreandfarming;
 
 import io.github.jmanz7.oreandfarming.init.ModBlocks;
 import io.github.jmanz7.oreandfarming.init.ModItems;
+import io.github.jmanz7.oreandfarming.init.ModLootModifierSerializers;
 import net.minecraft.util.DamageSource;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -22,6 +23,7 @@ public class OreandFarming
 
         ModBlocks.BLOCKS.register(modEventBus);
         ModItems.ITEMS.register(modEventBus);
+        ModLootModifierSerializers.LOOT_MODIFIER_SERIALIZERS.register(modEventBus);
         
         MinecraftForge.EVENT_BUS.register(this);
     }
