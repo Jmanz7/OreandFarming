@@ -13,6 +13,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 import javax.annotation.Nonnull;
 import java.util.List;
+import java.util.Random;
 
 public class AppleConverterModifier extends LootModifier
 {
@@ -37,16 +38,20 @@ public class AppleConverterModifier extends LootModifier
     @Override
     protected List<ItemStack> doApply(List<ItemStack> generatedLoot, LootContext context)
     {
-        for (ItemStack stack : generatedLoot)
-        {
-            if (stack.getItem() == itemToCheck && context.getRandom().nextFloat() < chanceToConvert)
-            {
-                generatedLoot.remove(stack);
-                generatedLoot.add(new ItemStack(replacementItem));
-            }
-        }
+        generatedLoot.replaceAll(stack -> tryReplaceItem(stack, context.getRandom()));
 
         return generatedLoot;
+    }
+
+    private ItemStack tryReplaceItem(ItemStack stack, Random random)
+    {
+        if (stack.getItem() == itemToCheck && random.nextFloat() < chanceToConvert)
+        {
+            ItemStack newStack = new ItemStack(replacementItem, stack.getCount());
+            newStack.setTag(stack.getTag());
+            return newStack;
+        }
+        return stack;
     }
 
     public static class Serializer extends GlobalLootModifierSerializer<AppleConverterModifier>
