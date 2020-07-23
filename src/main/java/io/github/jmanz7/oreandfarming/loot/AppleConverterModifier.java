@@ -1,7 +1,6 @@
 package io.github.jmanz7.oreandfarming.loot;
 
 import com.google.gson.JsonObject;
-import io.github.jmanz7.oreandfarming.OreandFarming;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.JSONUtils;
@@ -13,7 +12,6 @@ import net.minecraftforge.common.loot.LootModifier;
 import net.minecraftforge.registries.ForgeRegistries;
 
 import javax.annotation.Nonnull;
-import java.util.Arrays;
 import java.util.List;
 
 public class AppleConverterModifier extends LootModifier
