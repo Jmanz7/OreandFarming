@@ -47,7 +47,7 @@ public class EventHandler
 		if (event.getType() == VillagerProfession.FARMER)
 		{
 			VillagerTrades.ITrade trade = new BasicTrade(1, new ItemStack(ModItems.GREEN_APPLE.get()), 16, 5, 0.05F);
-			event.getTrades().get(2).add(trade);
+			event.getTrades().get(2).add(trade); // Adds the trade to the level 2 of the villager trades.
 		}
 	}
 }
