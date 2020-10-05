@@ -7,6 +7,7 @@ import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
+@SuppressWarnings("unused")
 public final class ModLootModifierSerializers
 {
     public static final DeferredRegister<GlobalLootModifierSerializer<?>> LOOT_MODIFIER_SERIALIZERS = new DeferredRegister<>(ForgeRegistries.LOOT_MODIFIER_SERIALIZERS, OreandFarming.MODID);

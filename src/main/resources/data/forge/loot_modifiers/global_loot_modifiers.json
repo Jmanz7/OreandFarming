@@ -2,6 +2,7 @@
   "replace": false,
   "entries":
   [
-    "oreandfarming:apple_converter"
+    "oreandfarming:apple_converter",
+    "oreandfarming:diamond_apple_adder"
   ]
 }
