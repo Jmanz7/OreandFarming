@@ -3,12 +3,12 @@ package io.github.jmanz7.oreandfarming.loot;
 import com.google.gson.JsonObject;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.loot.LootContext;
+import net.minecraft.loot.LootParameters;
+import net.minecraft.loot.conditions.ILootCondition;
 import net.minecraft.util.JSONUtils;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.WeightedRandom;
-import net.minecraft.world.storage.loot.LootContext;
-import net.minecraft.world.storage.loot.LootParameters;
-import net.minecraft.world.storage.loot.conditions.ILootCondition;
 import net.minecraftforge.common.loot.GlobalLootModifierSerializer;
 import net.minecraftforge.common.loot.LootModifier;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -16,6 +16,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import javax.annotation.Nonnull;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.Random;
 
 public class AppleConverterModifier extends LootModifier
@@ -84,6 +85,27 @@ public class AppleConverterModifier extends LootModifier
             int specialReplacementWeight = JSONUtils.getInt(object, "specialReplacementWeight");
 
             return new AppleConverterModifier(conditions, item, weightForKeeping, replacement, replacementWeight, specialReplacement, specialReplacementWeight);
+        }
+
+        /**
+         * Write the serializer to json.
+         * <p>
+         * Most serializers won't have to do anything else than {@link #makeConditions}
+         * Which simply creates the JsonObject from an array of ILootConditions.
+         */
+        @Override
+        public JsonObject write(AppleConverterModifier instance)
+        {
+            JsonObject json = makeConditions(instance.conditions);
+
+            json.addProperty("item", Objects.requireNonNull(instance.itemToReplace.getRegistryName()).toString());
+            json.addProperty("weightForKeeping", instance.weightForKeeping);
+            json.addProperty("replacement", Objects.requireNonNull(instance.replacementItem.getRegistryName()).toString());
+            json.addProperty("replacementWeight", instance.replacementWeight);
+            json.addProperty("specialReplacement", Objects.requireNonNull(instance.specialReplacementItem.getRegistryName()).toString());
+            json.addProperty("specialReplacementWeight", instance.specialReplacementWeight);
+
+            return json;
         }
     }
 }
