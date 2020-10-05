@@ -12,7 +12,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 @SuppressWarnings("unused")
 public final class ModItems
 {
-    public static final DeferredRegister<Item> ITEMS =  new DeferredRegister<>(ForgeRegistries.ITEMS, OreandFarming.MODID);
+    public static final DeferredRegister<Item> ITEMS =  DeferredRegister.create(ForgeRegistries.ITEMS, OreandFarming.MODID);
 
     public static final RegistryObject<Item> HEATED_IRON_INGOT = ITEMS.register("heated_iron_ingot", () -> new HeatedIronIngotItem(new Item.Properties().group(ItemGroup.MATERIALS)));
     public static final RegistryObject<Item> STEEL_INGOT = ITEMS.register("steel_ingot", () -> new Item(new Item.Properties().group(ItemGroup.MATERIALS)));

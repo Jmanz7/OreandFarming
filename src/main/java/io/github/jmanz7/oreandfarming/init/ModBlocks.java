@@ -10,7 +10,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 public final class ModBlocks
 {
-    public static final DeferredRegister<Block> BLOCKS = new DeferredRegister<>(ForgeRegistries.BLOCKS, OreandFarming.MODID);
+    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, OreandFarming.MODID);
 
     public static final RegistryObject<Block> STEEL_BLOCK = BLOCKS.register("steel_block", () -> new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(5.0F, 6.0F).sound(SoundType.METAL)));
     // public static final RegistryObject<Block> COMPRESSOR = BLOCKS.register("compressor", () -> new CompressorBlock(Block.Properties.create(Material.IRON).hardnessAndResistance(3.5F).sound(SoundType.METAL)));
