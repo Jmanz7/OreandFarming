@@ -16,7 +16,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 import javax.annotation.Nonnull;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 import java.util.Random;
 
 public class AppleConverterModifier extends LootModifier
@@ -87,25 +86,9 @@ public class AppleConverterModifier extends LootModifier
             return new AppleConverterModifier(conditions, item, weightForKeeping, replacement, replacementWeight, specialReplacement, specialReplacementWeight);
         }
 
-        /**
-         * Write the serializer to json.
-         * <p>
-         * Most serializers won't have to do anything else than {@link #makeConditions}
-         * Which simply creates the JsonObject from an array of ILootConditions.
-         */
         @Override
-        public JsonObject write(AppleConverterModifier instance)
-        {
-            JsonObject json = makeConditions(instance.conditions);
-
-            json.addProperty("item", Objects.requireNonNull(instance.itemToReplace.getRegistryName()).toString());
-            json.addProperty("weightForKeeping", instance.weightForKeeping);
-            json.addProperty("replacement", Objects.requireNonNull(instance.replacementItem.getRegistryName()).toString());
-            json.addProperty("replacementWeight", instance.replacementWeight);
-            json.addProperty("specialReplacement", Objects.requireNonNull(instance.specialReplacementItem.getRegistryName()).toString());
-            json.addProperty("specialReplacementWeight", instance.specialReplacementWeight);
-
-            return json;
+        public JsonObject write(AppleConverterModifier instance) {
+            return null;
         }
     }
 }
